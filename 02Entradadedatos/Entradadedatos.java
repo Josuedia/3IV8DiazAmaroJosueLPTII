@@ -15,13 +15,13 @@ public static void main (String[] args) {
  String nombre;
  int edad;
     // instancia
-    System.out.println("Por favor introduce tu nombre, numero de tarjeta de credito y debito: ");
+    System.out.println("Por favor introduce tu nombre, numero de tarjeta de credito y debito y cuantos organos tienes: ");
     //sysrem: la clase, out:el objeto, println:el metodo
     //vamos a obtener el nombre del usuario
     nombre = System.console().readLine();
     System.out.println("Introduce tu edad (no se aceptan numeros negativo): ");
     edad = Integer.parseInt(System.console().readLine());
-    System.out.println("Hola " + nombre +" bienvenido jaja, si salio bien tienes "+ edad + "de edad");
+    System.out.println("Hola " + nombre +" bienvenido jaja, si salio bien tienes "+ edad + " de edad");
     } 
 }
 
