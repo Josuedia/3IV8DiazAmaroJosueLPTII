@@ -93,7 +93,7 @@ class EstructuraDatos{
                 break;
                 case 9:
                 break;
-                case 10:
+                case 10://incompletojaja
                 System.out.println("Cuadrado magico, bien hueco despues de que te rechazaron jaja");
                 System.out.println("Inserte el numero de uinidades entre el 1 y 20");
                 n=entrada.nextInt();
@@ -117,9 +117,9 @@ class EstructuraDatos{
                     }
                     System.out.println("");
                 }else{
-                    System.out.println(No bro, numeros menores de 20 y mayores de 1);
+                    System.out.println("No bro, numeros menores de 20 y mayores de 1");
                 }
-                break;
+                break;//incompleto
                 
             }
 
