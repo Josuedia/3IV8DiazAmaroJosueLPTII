@@ -99,7 +99,7 @@ class latarea {
         cneg=0;
         cneu=0;
         do{
-        System.out.println("Cuantos numeros desea introducir?");
+        System.out.println("Cuantos numeros desea contar?");
         num1=respuesta.nextInt();
         }while(num1<0);
         for(m=0; m<num1; m++){
