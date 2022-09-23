@@ -2,14 +2,9 @@ import java.util.Scanner;
 class latarea {
     public static void main (String[] args){
     Scanner respuesta= new Scanner(System.in);
-    int edad1;
-    double n;
-    double r;
-    double abono1;
-    double abono2;
+    int edad1, mensaje2, numerobinario, m, num1, num2, cp, cneg, cneu;
+    double n, r, abono1, abono2;
     char mensaje1;
-    int mensaje2;
-    int numerobinario;
     String binario;
     //menu
     do{
@@ -100,6 +95,27 @@ class latarea {
         }
         break;
         case 4:
+        cp=0;
+        cneg=0;
+        cneu=0;
+        do{
+        System.out.println("Cuantos numeros desea introducir?");
+        num1=respuesta.nextInt();
+        }while(num1<0);
+        for(m=0; m<num1; m++){
+            System.out.println("Introduzca un numero:");
+            num2=respuesta.nextInt();
+            if(num2>0){
+                cp++;
+            }else if(num2<0){
+                cneg++;
+            }else if(num2==0){
+                cneu++;
+            }
+        }
+        System.out.println("Hay en total "+cp+" numeros positivos");
+        System.out.println("Hay en total "+cneg+" numeros negativos");
+        System.out.println("Hay en total "+cneu+" numeros neutros (0)");
         break;
     }
 
