@@ -55,7 +55,7 @@ class EstructuraDatos{
                 System.out.println("Ingrese el numero positivo entero que desee convertir a binario");
                 numerobinario=entrada.nextInt();
                 binario="";
-                //comrpobar que sea entero psortivo
+                //comrpobar que sea entero positivo
                 if(numerobinario>0){
                     //Debo aplicar el algoritmo
                     while(numerobinario>0){
@@ -95,14 +95,14 @@ class EstructuraDatos{
                 break;
                 case 10://incompletojaja
                 System.out.println("Cuadrado magico, bien hueco despues de que te rechazaron jaja");
-                System.out.println("Inserte el numero de uinidades entre el 1 y 20");
+                System.out.println("Inserte el numero de unidades entre el 1 y 20");
                 n=entrada.nextInt();
                 if(n >= 1 && n <= 20){
                     //linea superior
                     for(i=0;i < n;i++ ){
                         System.out.print(" * "); 
                     }
-                    System.out.println("");
+                    System.out.println(" ");
                     //cuadrado interno
                     for(int j=0; j<n-2; j++){
                         
@@ -110,7 +110,7 @@ class EstructuraDatos{
                         for(int k=0;k<n-2;k++){
                             System.out.println(" ");
                         }
-                        System.out.println(" * ")
+                        System.out.println(" * ");
                     }
                     for(i=0;i < n;i++ ){
                         System.out.print(" * "); 
@@ -120,7 +120,47 @@ class EstructuraDatos{
                     System.out.println("No bro, numeros menores de 20 y mayores de 1");
                 }
                 break;//incompleto
-                
+                case 11:
+                break;
+                case 12:
+                break;
+                case 13:
+                System.out.println("Bienvenido a la calculadora");
+                System.out.println("Ingrese el primer numero");
+                a =entrada.nextInt();
+                System.out.println("Ingrese el segundo numero");
+                b =entrada.nextInt();
+                System.out.println("Ingrese el tipo de operacion (+,-,*,/)");
+                char ope =entrada.next().charAt(0);
+                switch(ope){
+                    case '+':
+                    resultado=a + b;
+                    System.out.println("La suma es: "+resultado);
+                    break;
+                    case '-':
+                    resultado=a - b;
+                    System.out.println("La resta es: "+resultado);
+                    break;
+                    case '*':
+                    resultado=a * b;
+                    System.out.println("La multiplicacion es: "+resultado);
+                    break;
+                    case '/':
+                    if(b!=0){
+                        resultado=a / b;
+                    System.out.println("La division es: "+resultado);
+                    }else{
+                        System.out.println("No, ya hay como 500 tik toks excplicando por que b no puede ser 0");
+                    }
+                    break;
+                    default:
+                    System.out.println("Operacion no admitida, esta no es una calculadora casio, solo se admiten +,-,*,/");
+                }
+
+                break;
+                default:
+                System.out.println("Operacion no admitida");
+                break;
             }
 
 
